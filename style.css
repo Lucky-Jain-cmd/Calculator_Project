@@ -1,0 +1,76 @@
+
+/* General body styling */
+#title{
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: lightgray;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+#calculator {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 260px;
+}
+
+/* Display styling */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.8em;
+    text-align: right;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: white;
+}
+
+/* Button container grid */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons styling */
+.button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #555;
+}
+
+/* Special buttons like C and = */
+.button:nth-child(1), /* C */
+.button:nth-child(16) /* = */ {
+    background-color: #ff9500;
+    color: white;
+}
+
+.button:nth-child(1):hover,
+.button:nth-child(16):hover {
+    background-color: #ffa733;
+}
